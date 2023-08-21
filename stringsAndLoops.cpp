@@ -7,6 +7,7 @@
 
 int main()
 {
+	// STRINGS
 	std::cout << "Hello. Welcome to this very cool strings and loops program." << std::endl;
 
 	std::string megaString = "The five boxing wizards jump quickly.";
@@ -29,6 +30,19 @@ int main()
 	megaString.clear();
 	std::cout << "Is empty after .clear(): " << megaString.empty() << std::endl;
 
+
+	// LOOPS
+	int number;
+	std::cout << "\nPlease enter a number to be factorialized: ";
+	std::cin >> number;
+
+	int factorial = 1;
+
+	for (int i = 1; i <= number; i++) {
+		factorial *= i;
+	}	
+
+	std::cout << number << "! = " << factorial << std::endl;
 
 	return 0;
 }
